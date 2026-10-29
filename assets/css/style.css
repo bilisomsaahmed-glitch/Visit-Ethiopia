@@ -1,0 +1,277 @@
+
+body{
+    padding: 0.5em;
+    background-color: rgb(4, 4, 33);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ 
+.homecontainer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(4, 4, 34);
+    color: white;
+    
+    
+    
+}
+.homelogo{
+    display: flex;
+    justify-content: start;
+    gap:1em;
+    
+}
+.homelogo div{
+    align-self: center;
+}
+
+.imagelogo img{
+    width: 3em;
+    height: 3em;
+}
+.menubar a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+.menubar li{
+    list-style-type:none;
+}
+.menubar ul{
+    
+    display: flex;
+    justify-content: end;
+}
+.landingpage{
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh-85px);
+    background: linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.95)), 
+    url("../images/backround.jpg");
+     background-size:cover;
+     background-position: bottom center; 
+     background-repeat: no-repeat;
+     justify-content: center;
+     align-items: stretch;
+     height: 90vh;
+     
+}
+.landingpage .bodytext{
+    min-height: 0px;
+    flex: 1;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.neverstopcontainer h1{
+
+ color: rgb(255, 162, 0);
+
+}
+.exploringcontainer h1{
+    color: white;
+}
+.paragraphcontainer p{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+.bodytext{
+    margin-left: 1em;
+
+}
+.bodyheading{
+    font-size: 2.6em;
+}
+.getstarted{
+    display: flex;
+    justify-content: center;
+}
+.getstarted button{
+    background-color: goldenrod;
+    height: 3.5em;
+    width: 10em;
+    border-radius: 2em;
+    margin:1em;
+}
+.packageimagecontainer img{
+    height: 5em;
+    width: 5em;
+    border-radius:120px;
+}
+
+.packagecontainer{
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.1em;
+    padding: 1em;
+}
+.packageboxcontainer{
+    
+    background-color: rgba(2, 2, 14, 0.954);
+    border-radius: 1em;
+    margin: 0.5em;
+    padding: 0.3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.packageheading{
+    text-align: center;
+    color: white;
+}
+
+.packagecontainer div p{
+  color: white;
+  text-align: center;
+}
+.packageheadingcontainer h1{
+    color: white;
+}
+.button button{
+    background-color: orange;
+    margin: 1em;
+    height: 2em;
+    border-radius: 4px;
+}
+.popular img{
+    height: 20em;
+    width: 23em;
+    border-radius: 0.7em;
+}
+.popular h1{
+    color: orange;
+    font-size: 20px;
+}
+.formcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+.personalinfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.personalinfo input{
+    background-color:hsl(244, 94%, 14%);
+    display: block;
+    width: 20em;
+    height: 3em;
+    margin: 0.5em;
+    border-radius: 1em;
+    color: white;
+}
+textarea{
+    background-color:hsl(244, 94%, 14%);
+    display: block;
+    width: 96%;
+    height: 10em;
+    margin: 0.5em;
+    padding: 0.3em;
+    border-radius: 1em;
+    color: white;
+}
+.submitbutton{
+    height: 3.5em;
+    width: 10em;
+    background-color: goldenrod;
+    border-radius: 2em;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(2, 2, 15);
+    color: white;
+    padding: 1em;
+}
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact >div{
+ display: flex;
+ flex-direction: column;
+ justify-content: start;
+ align-items: center;
+  
+}
+.contact a{
+    display: block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.842);
+}
+.footerheading{
+    color: darkorange;
+    text-decoration: underline;
+}
+.address{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.address p{
+ display: block;
+}
+
+.togglebutton span{
+        margin: 0.2rem;
+        border: 1px solid white;
+        width: 2rem;
+        display: block;
+    }
+.togglebutton{
+    display: none;
+}
+@media(max-width:730px){
+    .bodyheading{
+    font-size: 2em;
+}
+     .togglebutton{
+        
+     display: block;
+     position: absolute;
+     top: 1.5rem;
+     right: 0.5rem;
+    }
+    .submenu{
+        display:none ;
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+
+    }
+    .menubar:hover .submenu{
+        display: block;
+    }
+   .menubar:hover ul{
+    display: flex;
+    flex-direction: column;
+   }
+    .packagecontainer{
+    display: grid;
+    
+    grid-template-columns:1fr;
+    gap: 0.1em;
+    padding: 1em;
+}
+.personalinfo{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+}
+
